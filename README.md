@@ -18,9 +18,9 @@ The link to the github repo can be found [here](https://github.com/Bullswan508/g
 
 ---
 
-## Project Leader: Sean Radkowski
+### Project Leader: Sean Radkowski
 
-## Group 6 Members: Bronson Ellenwine, Sean Radkowski
+### Group 6 Members: Bronson Ellenwine, Sean Radkowski
 
 Due Date: ***03/09/2025***
 
