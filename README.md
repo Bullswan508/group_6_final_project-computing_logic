@@ -1,7 +1,3 @@
-# group_6_final_project-computing_logic
-Group 6's final project submission for computing logic class
-
----
 
       ______                                                  ______        
      /      \                                                /      \       
@@ -15,6 +11,10 @@ Group 6's final project submission for computing logic class
                                             $$ |                            
                                             $$ |                            
                                             $$/                             
+
+---
+
+The link to the github repo can be found [here](https://github.com/Bullswan508/group_6_final_project-computing_logic)
 
 ---
 
@@ -37,6 +37,3 @@ Contains 5 different scenarios with the data written out as it goes through the 
 
 All manually tested
 
----
-
-The link to the github repo can be found [here](https://github.com/Bullswan508/group_6_final_project-computing_logic)
