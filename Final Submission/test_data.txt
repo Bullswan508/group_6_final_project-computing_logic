@@ -1,0 +1,216 @@
+TESTING DONE BY SEAN RADKOWSKI
+
+TEST EXAMPLE 1:
+--------------------
+
+After input_employee_data():
+
+employee = {
+
+    'ID': '0001',
+    'first_name': 'John',
+    'last_name': 'Doe',
+    'num_dependents': 2,
+    'hours_worked': 25
+
+}
+
+After calculate_payroll(employee):
+
+payroll = {
+
+    'overtime_hours': 0,
+    'normal_hours': 25,
+    'gross_pay': 500,
+    'dependent_deduction': 50,
+    'pre_tax': 450,
+    'state_tax': 25.2,
+    'federal_tax': 35.55,
+    'post_tax': 389.25,
+    'final_pay': 439.25
+
+}
+
+Output file, "payroll_0001.txt"
+
+Payroll Summary for John Doe (ID: 0001)
+Gross Pay: $500.00
+Dependent Deduction: $50.00
+Pre-Tax Amount: $450.00
+State Tax (5.6%): $25.20
+Federal Tax (7.9%): $35.55
+Post-Tax Amount: $389.25
+Final Pay: $439.25
+
+
+TEST EXAMPLE 2:
+--------------------
+
+After input_employee_data():
+
+employee = {
+
+    'ID': '0004',
+    'first_name': 'Jane',
+    'last_name': 'Doe',
+    'num_dependents': 2,
+    'hours_worked': 40
+
+}
+
+After calculate_payroll(employee):
+
+payroll = {
+
+    'overtime_hours': 0,
+    'normal_hours': 40,
+    'gross_pay': 800,
+    'dependent_deduction': 50,
+    'pre_tax': 750,
+    'state_tax': 42,
+    'federal_tax': 59.25,
+    'post_tax': 648.75,
+    'final_pay': 698.75
+
+}
+
+Output file, "payroll_0004.txt"
+
+Payroll Summary for Jane Doe (ID: 0004)
+Gross Pay: $800.00
+Dependent Deduction: $50.00
+Pre-Tax Amount: $750.00
+State Tax (5.6%): $42.00
+Federal Tax (7.9%): $59.25
+Post-Tax Amount: $648.75
+Final Pay: $698.75
+
+
+TEST EXAMPLE 3:
+--------------------
+
+After input_employee_data():
+
+employee = {
+
+    'ID': '0010',
+    'first_name': 'Sean',
+    'last_name': 'Radkowski',
+    'num_dependents': 0,
+    'hours_worked': 60
+
+}
+
+After calculate_payroll(employee):
+
+payroll = {
+
+    'overtime_hours': 20,
+    'normal_hours': 40,
+    'gross_pay': 1400,
+    'dependent_deduction': 0,
+    'pre_tax': 1400,
+    'state_tax': 78.4,
+    'federal_tax': 110.6,
+    'post_tax': 1211,
+    'final_pay': 1211
+
+}
+
+Output file, "payroll_0010.txt"
+
+Payroll Summary for Sean Radkowski (ID: 0010)
+Gross Pay: $1400.00
+Dependent Deduction: $0.00
+Pre-Tax Amount: $1400.00
+State Tax (5.6%): $78.40
+Federal Tax (7.9%): $110.60
+Post-Tax Amount: $1211.00
+Final Pay: $1211.00
+
+
+TEST EXAMPLE 4:
+--------------------
+
+After input_employee_data():
+
+employee = {
+
+    'ID': '0046',
+    'first_name': 'Bronson',
+    'last_name': 'Ellenwine',
+    'num_dependents': 1,
+    'hours_worked': 15
+
+}
+
+After calculate_payroll(employee):
+
+payroll = {
+
+    'overtime_hours': 0,
+    'normal_hours': 15,
+    'gross_pay': 300,
+    'dependent_deduction': 25,
+    'pre_tax': 275,
+    'state_tax': 15.4,
+    'federal_tax': 21.73,
+    'post_tax': 237.87,
+    'final_pay': 262.87
+
+}
+
+Output file, "payroll_0046.txt"
+
+Payroll Summary for Bronson Ellenwine (ID: 0046)
+Gross Pay: $300.00
+Dependent Deduction: $25.00
+Pre-Tax Amount: $275.00
+State Tax (5.6%): $15.40
+Federal Tax (7.9%): $21.73
+Post-Tax Amount: $237.87
+Final Pay: $262.87
+
+
+TEST EXAMPLE 5:
+--------------------
+
+After input_employee_data():
+
+employee = {
+
+    'ID': '0280',
+    'first_name': 'Caleb',
+    'last_name': 'Collier',
+    'num_dependents': 0,
+    'hours_worked': 45
+
+}
+
+After calculate_payroll(employee):
+
+payroll = {
+
+    'overtime_hours': 5,
+    'normal_hours': 40,
+    'gross_pay': 950,
+    'dependent_deduction': 0,
+    'pre_tax': 950,
+    'state_tax': 53.2,
+    'federal_tax': 75.05,
+    'post_tax': 821.75,
+    'final_pay': 821.75
+
+}
+
+Output file, "payroll_0280.txt"
+
+Payroll Summary for {employee['first_name']} {employee['last_name']} (ID: 0280)
+Gross Pay: $950.00
+Dependent Deduction: $0.00
+Pre-Tax Amount: $950.00
+State Tax (5.6%): $53.20
+Federal Tax (7.9%): $75.05
+Post-Tax Amount: $821.75.00
+Final Pay: $821.75.00
+

@@ -1,0 +1,113 @@
+# GROUP 6 FINAL PROJECT PSEUDOCODE
+# WRITTEN BY SEAN RADKOWSKI AND BRONSON ELLENWINE
+
+
+
+
+# --- INPUT MODULE - SEAN RADKOWSKI ---
+
+"""
+Has a user input an employee's ID, name, number of dependents, and hours worked
+
+Returns a dictionary of all input values
+"""
+
+def input_employee_data():
+
+    employee = {}
+
+    employee['ID'] = input("What is the employee's ID?: ")
+    employee['first_name'] = input("What is the employee's first name?: ")
+    employee['last_name'] = input("What is the employee's last name?: ")
+    employee['num_dependents'] = int(input(f"How many dependents does {employee['first_name']} have?: "))
+    employee['hours_worked'] = int(input(f"How many hours did {employee['first_name']} work?: "))
+
+    return employee
+
+
+# --- CALCULATE MODULE - SEAN RADKOWSKI ---
+
+"""
+Calculates an employee's pay based on the number of hours they worked and the number of dependents they have
+
+Returns the final pay amount
+"""
+
+# CONSTANTS
+
+STATE_TAX_MULTIPLIER = 0.056 # For state tax percentage of %5.6
+FEDERAL_TAX_MULTIPLIER = 0.079 # For federal tax percentage of %7.9
+DEDUCTION_PER_DEPENDENT = 25 # Each of the employee's dependents gives them $25 of non taxable income
+MAX_NORMAL_HOURS = 40 # Employees can work a maximum of 40 hours before being paid overtime
+OVERTIME_PAY_MULTIPLIER = 1.5 # Overtime hours are worth time and a half'
+HOURLY_RATE = 20 # Arbitrarily chosen hourly pay
+
+# Function takes two args, first is the number of dependents the employee has and the second is the number of hours they worked
+def calculate_payroll(employee):
+
+    num_dependents = employee['num_dependents']
+
+    hours_worked = employee['hours_worked']
+
+    payroll = {}
+
+    # "overtime_hours" is equal to the difference of the hours worked minus the maximum amount of normal hours allowed, however if this value is negative it just equals 0
+    payroll['overtime_hours'] = (hours_worked - MAX_NORMAL_HOURS) if hours_worked > MAX_NORMAL_HOURS else 0
+
+    # "normal_hours" is equal to the hours input to the function unless there are overtime hours, in which case the normal hours must be at its maximum
+    payroll['normal_hours'] = hours_worked if overtime_hours == 0 else MAX_NORMAL_HOURS
+
+    payroll['gross_pay'] = (payroll['normal_hours'] * HOURLY_RATE) + (payroll['overtime_hours'] * HOURLY_RATE * 1.5)
+
+    payroll['dependent_deduction'] = num_dependents * DEDUCTION_PER_DEPENDENT
+
+    payroll['pre_tax'] = payroll['gross_pay'] - payroll['dependent_deduction']
+
+    payroll['state_tax'] = payroll['pre_tax'] * STATE_TAX_PERCENTAGE
+
+    payroll['federal_tax'] = payroll['pre_tax'] * FEDERAL_TAX_PERCENTAGE
+
+    payroll['post_tax'] = payroll['pre_tax'] - payroll['state_tax'] - payroll['federal_tax']
+
+    payroll['final_pay'] = payroll['post_tax'] + payroll['dependent_deduction']
+
+    return payroll
+
+
+# --- OUTPUT MODULE - BRONSON ELLENWINE ---
+
+# def write_to_file(employee, payroll):
+
+    # Writes employee payroll data to a file.
+
+    file_name = f"payroll_{employee['ID']}.txt"
+
+    with open(fileName, 'w') as file:
+        file.write(f"Payroll Summary for {employee['first_name']} {employee['last_name']} (ID: {employee['ID']})\n")
+        file.write(f"Gross Pay: ${payroll['gross_pay']:.2f}\n")
+        file.write(f"Dependent Deduction: ${payroll['dependent_deduction']:.2f}\n")
+        file.write(f"Pre-Tax Amount: ${payroll['pre_tax']:.2f}\n")
+        file.write(f"State Tax (5.6%): ${payroll['state_tax']:.2f}\n")
+        file.write(f"Federal Tax (7.9%): ${payroll['federal_tax']:.2f}\n")
+        file.write(f"Post-Tax Amount: ${payroll['post_tax']:.2f}\n")
+        file.write(f"Final Pay: ${payroll['final_pay]:.2f}\n")
+
+    print(f"Payroll file created: {file_name}")
+
+
+
+# ========================
+# ===== MAIN PROGRAM =====
+# ========================
+
+def main():
+
+    employee = input_employee_data()
+
+    payroll = calculate_payroll(employee)
+
+    write_to_file(employee, payroll)
+
+
+if __name__ == "__main__":
+    main()
