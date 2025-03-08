@@ -1,6 +1,7 @@
 # group_6_final_project-computing_logic
 Group 6's final project submission for computing logic class
 
+---
 
       ______                                                  ______        
      /      \                                                /      \       
@@ -15,7 +16,7 @@ Group 6's final project submission for computing logic class
                                             $$ |                            
                                             $$/                             
 
-
+---
 
 ### Project Leader: Sean Radkowski
 
@@ -23,6 +24,7 @@ Group 6's final project submission for computing logic class
 
 Due Date: **03/09/2025**
 
+---
 
 #### Final Submission/Group 6 - Final Project Pseudocode:
 
