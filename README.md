@@ -16,28 +16,22 @@ $$    $$/ $$ |      $$    $$/ $$    $$/ $$    $$/       $$    $$/
                                         $$/                             
 
 
-============================================================
--------------- Project Leader: Sean Radkowski --------------
 
----- Group 6 Members: Bronson Ellenwine, Sean Radkowski ----
+###               Project Leader: Sean Radkowski               
 
-------------------- Due Date: 03/09/2025 -------------------
-============================================================
+###     Group 6 Members: Bronson Ellenwine, Sean Radkowski     
+
+#####                    Due Date: 03/09/2025                     
 
 
-============================================================
-Final Submission/Group 6 - Final Project Pseudocode:
-------------------------------------------------------------
+####     Final Submission/Group 6 - Final Project Pseudocode:
 
 Contains the three different modules along with a main loop
-============================================================
 
 
-============================================================
-Final Submission/test_data.txt:
-------------------------------------------------------------
+####     Final Submission/test_data.txt:
 
 Contains 5 different scenarios with the data written out as it goes through the main loop
 All manually tested
-============================================================
+
 
