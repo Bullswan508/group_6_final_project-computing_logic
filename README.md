@@ -22,7 +22,7 @@ The link to the github repo can be found [here](https://github.com/Bullswan508/g
 
 ### Group 6 Members: Bronson Ellenwine, Sean Radkowski
 
-Due Date: **03/09/2025**
+Due Date: ***03/09/2025***
 
 ---
 
