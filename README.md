@@ -36,3 +36,7 @@ Contains the three different modules along with a main loop
 Contains 5 different scenarios with the data written out as it goes through the main loop
 
 All manually tested
+
+---
+
+The link to the github repo can be found [here](https://github.com/Bullswan508/group_6_final_project-computing_logic)
