@@ -31,6 +31,6 @@ Contains the three different modules along with a main loop
 
 #### Final Submission/test_data.txt:
 
->Contains 5 different scenarios with the data written out as it goes through the main loop
->
->All manually tested
+Contains 5 different scenarios with the data written out as it goes through the main loop
+
+All manually tested
