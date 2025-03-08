@@ -21,7 +21,7 @@ Group 6's final project submission for computing logic class
 
 ### Group 6 Members: Bronson Ellenwine, Sean Radkowski
 
-##### Due Date: **03/09/2025**
+Due Date: **03/09/2025**
 
 
 #### Final Submission/Group 6 - Final Project Pseudocode:
